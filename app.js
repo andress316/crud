@@ -61,8 +61,8 @@ function insertar(lecturaDeDatos) {
     col1.innerHTML = lecturaDeDatos[0];
     col2.innerHTML = lecturaDeDatos[1];
     col3.innerHTML = lecturaDeDatos[2];
-    col4.innerHTML = `<button onclick = edit(this)>Editar</button>
-                      <button onclick = eliminar(this)>Eliminar</button>`;
+    col4.innerHTML = `<button onclick = edit(this) class="button">Editar</button>
+                      <button onclick = eliminar(this) class="button">Eliminar</button>`;
 }
 
 
