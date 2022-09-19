@@ -66,7 +66,7 @@ function insertar(lecturaDeDatos) {
 }
 
 
-/*_________________EDITAR DATOS_____________________________ */
+/*_________________EDITAR FILA DE DATOS_____________________________ */
 
 function edit(dat){
     fila = dat.parentElement.parentElement;
@@ -75,7 +75,7 @@ function edit(dat){
     document.getElementById("exp").value = fila.cells[2].innerHTML;
 }
 
-/*_________________ACTUALIZAR DATOS_____________________________ */
+/*_________________ACTUALIZAR FILA DE DATOS_____________________________ */
 
 function actualizar(){
     fila.cells[0].innerHTML = document.getElementById("nombre").value;
@@ -85,3 +85,9 @@ function actualizar(){
 }
 
 
+/*_________________ELIMINAR FILA DE DATOS_____________________________ */
+
+function eliminar(td){
+    fila = td.parentElement.parentElement;
+    document.getElementById("registro").deleteRow(fila.rowIndex);
+}
